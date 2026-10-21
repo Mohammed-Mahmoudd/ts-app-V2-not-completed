@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // JS version output
+    "module": "CommonJS", // Node uses CommonJS
+    "rootDir": "./src", // Source files
+    "baseUrl": "./", // Base directory
+    "paths": {
+      "@/*": ["src/*"] // @/ maps to src/
+    },
+    "outDir": "./dist", // Compiled files
+    "strict": true, // Enable all strict checks
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true, // Import commonjs modules
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": false, // Not using Babel; set to false
+    "noEmitOnError": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
